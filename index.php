@@ -61,9 +61,8 @@ echo $num1 . " + " . $num2;
 </h1>
 <br/><br/>
 <?php
-if (!isset ($_POST['answer'])) {
-  echo "";
-}
+if (!isset ($_POST['answer'])) {}
+  elseif (($_POST['answer']) == null) {}
   else {
 $correct_answer = $_POST["num1"] + $_POST["num2"];
 
@@ -79,7 +78,7 @@ else {
 ?>
 <br/><br/><br/>
 
-<form method="post" action= "">
+<form method="post" action= " ">
 <p>
   <input name="num1" type="hidden" value="<?php echo $num1 ?>">
     <input name="num2" type="hidden" value="<?php echo $num2 ?>">
